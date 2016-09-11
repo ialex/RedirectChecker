@@ -1,8 +1,9 @@
 "use strict";
+
 var userAgents = require('./userAgents');
-var urls = require('./urls');
+var system = require('system');
 // var myurl="http://localhost:8000/";
-// var myurl    = system.args[1];
+var myurl = system.args[1];
 var page;
 var config = {
   apiKey: "AIzaSyDw8wl156Gd4IH9KB4WDoKU3qlKZO7-WBc",
@@ -17,7 +18,7 @@ function getRandom(min, max) {
 }
 var agentRand = getRandom(0, 248);
 var agent = userAgents[agentRand];
-var myurl = urls[getRandom(0,24)];
+// var myurl = urls[getRandom(0,24)];
 console.log('visiting: ', myurl);
 console.log('ua: ', JSON.stringify(agent));
 var renderPage = function (url, userAgent, size) {
