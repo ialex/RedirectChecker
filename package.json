@@ -1,0 +1,19 @@
+{
+  "name": "redirect-checker",
+  "version": "0.0.1",
+  "description": "Helps you detect redirects whenever they happen",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "redirect",
+    "web",
+    "browser"
+  ],
+  "author": "Alejandro Villanueva",
+  "license": "MIT",
+  "dependencies": {
+    "phantomjs": "^2.1.7"
+  }
+}
